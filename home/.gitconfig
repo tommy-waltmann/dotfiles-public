@@ -1,0 +1,8 @@
+[push]
+	default = simple
+	followTags = true
+[color]
+	ui = auto
+[core]
+	editor = $(which vim)
+	excludesfile = "~/.gitexcludes"

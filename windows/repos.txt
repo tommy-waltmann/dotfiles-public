@@ -1,0 +1,15 @@
+euclid
+fresnel
+freud
+fsph
+glotz-formats
+gsd
+hoomd-blue
+injavis
+libgetar
+peact
+plato
+platoviz
+signac
+signac-flow
+signac-dashboard
