@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline'         " Cute helpful status bar
 Plugin 'scrooloose/nerdtree'             " Directory navigation in sidebar
 Plugin 'Xuyuanp/nerdtree-git-plugin'     " Show git status in NERDTree
 Plugin 'tpope/vim-abolish'               " Case-matching replace with :%S/find/replace/g
+Plugin 'morhetz/gruvbox'
 
 " Whitespace management
 Plugin 'ntpeters/vim-better-whitespace'  " Show and strip trailing whitespace
@@ -39,9 +40,15 @@ Plugin 'leafgarland/typescript-vim'      " Syntax highlighting for TypeScript
 Plugin 'ap/vim-css-color'                " Color CSS colors with their actual color
 Plugin 'alvan/vim-closetag'              " HTML auto-close tags
 
+" Autocompletion
+"Plugin 'prabirshrestha/asyncomplete.vim'
+"Plugin 'prabirshrestha/asyncomplete-file.vim'
+"let g:asyncomplete_auto_popup = 1
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 
 " Custom filetype extensions
 au BufNewFile,BufRead *.cuh set filetype=cpp
@@ -152,11 +159,13 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\|\t/
 
 " Monokai color scheme
-syntax on
-colorscheme monokai
-set t_Co=256  " vim-monokai now only support 256 colours in terminal.
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
+"syntax on
+"colorscheme monokai
+"set t_Co=256  " vim-monokai now only support 256 colours in terminal.
+"let g:monokai_term_italic = 1
+"let g:monokai_gui_italic = 1
+colorscheme gruvbox
+set background=dark
 
 " NERDTree toggle
 map <F2> :NERDTreeToggle<CR>

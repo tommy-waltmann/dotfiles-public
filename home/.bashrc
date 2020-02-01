@@ -63,6 +63,7 @@ alias ch="git checkout"
 alias push="git push"
 alias pull="git pull"
 alias gsui="git submodule update --init"
+alias lg="git log --all --decorate --oneline --graph"
 
 # Shell options
 # Automatically enter directories
